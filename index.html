@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Meu App Mobile</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Tela Inicial -->
+        <div class="screen home-screen active">
+            <header class="app-header">
+                <h1>INÍCIO</h1>
+            </header>
+            
+            <main class="app-main">
+                <div class="button-stack">
+                    <button class="play-button" id="playButton">
+                        <img src="img/playbutton.png" alt="Jogar" class="button-img">
+                    </button>
+                    <button class="settings-button" id="configButton">
+                        <img src="img/settingsbutton.png" alt="Configurações" class="button-img">
+                    </button>
+                </div>
+            </main>
+        </div>
+        
+        <!-- Tela de Configuração -->
+        <div class="screen config-screen" id="configScreen">
+            <header class="app-header">
+                <button class="back-button" id="backButton">
+                    <img src="img/backbutton.png" alt="Voltar" class="button-img">
+                </button>
+                <h1>CONFIGURAÇÕES</h1>
+            </header>
+            
+            <main class="config-main">
+                <div class="config-option">
+                    <label for="volume">Volume</label>
+                    <input type="range" id="volume" min="0" max="100" value="50">
+                </div>
+                
+                <div class="config-option">
+                    <label>
+                        <input type="checkbox" id="musicEnabled" checked>
+                        Música
+                    </label>
+                </div>
+                
+                <div class="config-option">
+                    <label>
+                        <input type="checkbox" id="soundEffectsEnabled" checked>
+                        Efeitos Sonoros
+                    </label>
+                </div>
+                
+                <div class="config-option">
+                    <label for="difficulty">Dificuldade</label>
+                    <select id="difficulty">
+                        <option value="easy">Fácil</option>
+                        <option value="medium">Médio</option>
+                        <option value="hard">Difícil</option>
+                    </select>
+                </div>
+                
+                <div class="config-option">
+                    <label for="language">Idioma</label>
+                    <select id="language">
+                        <option value="pt">Português</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
